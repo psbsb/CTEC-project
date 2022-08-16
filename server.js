@@ -1,4 +1,5 @@
 var express = require("express");
+const port = 3000;
 
 var restaurantController = require('./controllers/restaurantController');
 var restaurantdetailsController = require('./controllers/restaurantdetailsController');
@@ -37,5 +38,6 @@ app.route('/loginmembers').post(memberController.loginMember);
 
 app.route('/email').post(restaurantController.sendemail);  
 
-app.listen(8080,"127.0.0.1");
-console.log("web server running@ https://127.0.0.1:8080");
+//app.listen(8080,"127.0.0.1");
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+//console.log("web server running @ http://127.0.0.1:8080"); // output to console
