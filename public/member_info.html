@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>restaurant Review Website</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mystyle.css">
+
+</head>
+
+<!-- Include top navigation here -->
+<div w3-include-html="top-navigation.html"></div>
+<!-- This is the container that holds the initial message, heading, and movies -->
+<div class="container">
+  <!-- The message will be shown when the page loads and will
+        disappear after the movies are loaded -->
+  <div class="row" id="parent">
+    <form class="col-10">
+      <div class="form-group">
+        <div class="u-form-group u-form-partition-factor-2 u-form-group-2">
+          <label for="text-8641" class="u-label">First Name</label>
+          <input type="text" placeholder="" id="first_name" name="text" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+        </div>
+
+        <div class="u-form-group u-form-partition-factor-2 u-form-group-3">
+          <label for="text-a733" class="u-label">Last name</label>
+          <input type="text" placeholder="" id="last_name" name="text-1" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+        </div>
+
+        <div class="u-form-group u-form-name">
+          <label for="name-b130" class="u-label">address</label>
+          <input type="text" id="address" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+        </div>
+
+        <div class="u-form-group u-form-partition-factor-2 u-form-group-5">
+          <label for="text-6508" class="u-label">gender</label>
+          <input type="text" id="gender" name="text-4" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+        </div>
+
+        <div class="u-form-group u-form-partition-factor-2 u-form-group-6">
+          <label for="text-5d9e" class="u-label">phone number</label>
+          <input type="text" placeholder="" id="phone_number" name="text-3" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+        </div>
+
+        <div class="u-form-group u-form-group-7">
+          <label for="text-8b3d" class="u-label">Username</label>
+          <input type="text" placeholder="" id="username" name="text-2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+        </div>
+
+        <div class="u-form-group u-form-name u-form-group-8">
+          <label for="name-414d" class="u-label">Password</label>
+          <input type="text" id="password" name="name-1" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+        </div>
+        
+      <button type="button" onclick="" class="btn btn-primary">send</button>
+      <button type="button" onclick="deleteAccount()" class="btn btn-primary">delete</button>
+
+
+    </form>
+  </div>
+  <p>
+</div>
+<!-- Include the restaurant modal here -->
+<div w3-include-html="restaurant-modal.html"></div>
+<!-- Include the comments modal here -->
+<div w3-include-html="comments-modal.html"></div>
+<!-- Include the new comments modal here -->
+<div w3-include-html="new-comments-modal.html"></div>
+<!-- Include the edit comments modal here -->
+<div w3-include-html="edit-comments-modal.html"></div>
+<!-- Include the message modal here -->
+<div w3-include-html="message-modal.html"></div>
+<div w3-include-html="success-modal.html"></div>
+<div w3-include-html="fail-modal.html"></div>
+<br><br>
+<!-- Include the footer here -->
+<div w3-include-html="footer.html"></div>
+</body>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</script>
+<script>
+  //to bring in other HTML on the fly into this page
+  w3.includeHTML();
+</script>
+<script src="js/email.js"></script>
+<script src="js/member_detail.js"></script>
+
+
+</html>

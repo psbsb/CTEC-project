@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+    background-image:  linear-gradient(0deg, rgba(68, 68, 68, 0.993), rgb(132, 248, 0));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #08ca498a;
+}
+
+* {
+    box-sizing: border-box;
+}
+h1 {
+    color: #eee;
+    margin-bottom: 30px;
+}
+.container {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+footer {
+    background: #aaa;
+    color: white;
+}
+
+.edit {
+    float: right;
+    padding-right: 10px;
+    
+}
