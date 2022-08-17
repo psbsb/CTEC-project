@@ -1,4 +1,4 @@
-var mysql = require('mysql')
+var mysql = require('mysql');
 var connection = mysql.createConnection({
     host: 'mysqlinstance.cpaqvaxrtkde.ap-south-1.rds.amazonaws.com',
     port: '3306',
