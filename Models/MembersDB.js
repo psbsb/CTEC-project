@@ -6,11 +6,11 @@ var db = require('../db-connections');
 const user = require('./user');
 class MembersDB{
     getAllMembers(callback){
-        var sql = "SELECT user_name,phone_number from restraunt_review.member";
+        var sql = "SELECT user_name,phone_number from movie_info.member";
         db.query(sql,callback);
     }
     loginMember(user_name, callback){
-        var sql = "SELECT password from restraunt_review.member WHERE user_name = ?";
+        var sql = "SELECT password from movie_info.member WHERE user_name = ?";
         db.query(sql,[user_name], callback);
     }
     addMember(Members, callback){
