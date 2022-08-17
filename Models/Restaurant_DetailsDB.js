@@ -3,7 +3,7 @@
 var db = require('../db-connections');
 class Restaurant_DetailsDB{
     getAllRestaurant (callback){
-        var sql = "SELECT * from restraunt_review.restaurant_details";
+        var sql = "SELECT * from movie_info.restaurant_details";
         db.query(sql, callback);
     }
 
