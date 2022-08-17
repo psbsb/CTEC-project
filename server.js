@@ -5,7 +5,7 @@ var restaurantController = require('./controllers/restaurantController');
 var restaurantdetailsController = require('./controllers/restaurantdetailsController');
 var commentController = require('./controllers/commentController');
 var userController = require('./controllers/userController');
-var memberController = require('./controllers/memberController');
+
 
 var app = express();
 
@@ -30,11 +30,11 @@ app.route('/user').post(userController.adduser);
 app.route('/users/:id').put(userController.updateuser)
 app.route('/users/:id').delete(userController.deleteuser);
 
-app.route('/members').get(memberController.getAllMembers)
-app.route('/members').post(memberController.addMember);  
-app.route('/members/:id').put(memberController.updateMember);
-app.route('/members').delete(memberController.deleteMember);
-app.route('/loginmembers').post(memberController.loginMember);
+//app.route('/members').get(memberController.getAllMembers)
+//app.route('/members').post(memberController.addMember);  
+//app.route('/members/:id').put(memberController.updateMember);
+//app.route('/members').delete(memberController.deleteMember);
+//app.route('/loginmembers').post(memberController.loginMember);
 
 app.route('/email').post(restaurantController.sendemail);  
 
