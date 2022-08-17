@@ -3,7 +3,7 @@
 var db = require('../db-connections');
 class userDB{
     getAllusers(callback){
-        var sql = "SELECT * from restraunt_review.user";
+        var sql = "SELECT * from movie_info.user";
         db.query(sql,callback);
     }
     adduser(user,callback){
