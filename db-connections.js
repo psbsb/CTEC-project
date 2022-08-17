@@ -1,10 +1,10 @@
 var mysql = require('mysql')
 var connection = mysql.createConnection({
-    host:'localhost',
-    port:'3306',
-    user:'root',
-    password:'Shengbao04',
-    database:'restraunt_review'
+    host: 'mysqlinstance.cpaqvaxrtkde.ap-south-1.rds.amazonaws.com',
+    port: '3306',
+    user: 'admin',
+    password: 'Shengbao04',
+    database: 'restaurant'
 });
 
 connection.connect(err=>{ //test out coonection and consol.log error is there is one
