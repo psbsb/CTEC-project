@@ -3,7 +3,7 @@
 var db = require('../db-connections');
 class CommentsDB{
     getAllcomments(callback){
-        var sql = "SELECT * from restraunt_review.comment";
+        var sql = "SELECT * from movie_info.comment";
         db.query(sql,callback);
     }
     addComment(comment,callback){
