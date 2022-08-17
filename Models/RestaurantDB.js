@@ -3,20 +3,20 @@
 var db = require('../db-connections');
 class RestaurantDB{
     getAllRestaurant (callback){
-        var sql = "SELECT * from restraunt_review.restaurant";
+        var sql = "SELECT * from movie_info.restaurant";
         db.query(sql, callback);
     }
     findrestaurantlocation(callback){
-        var sql = "SELECT * FROM restraunt_review.restaurant WHERE cuisine LIKE '%location%'";
+        var sql = "SELECT * FROM movie_info.restaurant WHERE cuisine LIKE '%location%'";
         db.query(sql, callback);
     }
 
     getrestaurantBycuisine(cuisine, callback){
-        var sql = "SELECT * FROM restraunt_review.restaurant WHERE cuisine LIKE '%" + cuisine + "%'";
+        var sql = "SELECT * FROM movie_info.restaurant WHERE cuisine LIKE '%" + cuisine + "%'";
         db.query(sql, callback);
     }
     searchrestaurant(restaurant_name, callback){
-        var sql = "SELECT * FROM restraunt_review.restaurant WHERE restaurant_id = ? ";
+        var sql = "SELECT * FROM movie_info.restaurant WHERE restaurant_id = ? ";
         db.query(sql,[restaurant_name],callback);
     }
 }
