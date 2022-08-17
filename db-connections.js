@@ -4,7 +4,7 @@ var connection = mysql.createConnection({
     port: '3306',
     user: 'admin',
     password: 'Shengbao04',
-    database: 'food'
+    database: 'movie_info'
 });
 
 connection.connect(err=>{ //test out coonection and consol.log error is there is one
